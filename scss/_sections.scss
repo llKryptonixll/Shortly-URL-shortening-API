@@ -55,12 +55,23 @@ main{
         }
 
         .short-links-list{
+            position: relative;
             height: auto;
             width: 80%;
             overflow-y: auto;
             display: grid;
             align-content: flex-start;
             gap: 20px;
+
+            .empty-message{
+                color: $red;
+                font-size: 4rem;
+                justify-self: center;
+                position: absolute;
+                display: flex;
+                align-items: center;
+                height: 100%;
+            }
 
             hr{
                 display: none;
