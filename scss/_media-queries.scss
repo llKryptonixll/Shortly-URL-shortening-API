@@ -31,18 +31,27 @@
 
         .advanced-statistics-section{
             height: 1500px;
-            grid-template-rows: 30% 70%;
+            grid-template-rows: 20% 80%;
             .card-container{
                 grid-template-columns: 100%;
                 gap: 80px;
                 height: 100%;
                 justify-items: center;
+                align-content: center;
+
+                .card{
+                    .card-image-container{
+                        justify-self: center;
+                        left: 0;
+                    }
+                }
             }
 
             .card-container::after{
                 left: 50%;
+                transform: translateX(-50%);
                 width: 10px;
-                height: 100%;
+                height: 80%;
             }
     
         }
@@ -178,6 +187,12 @@
                         }
                     }
                 }
+            }
+        }
+
+        .boost-your-links-banner-section{  
+            p{
+                font-size: 1.6rem;
             }
         }
     }
