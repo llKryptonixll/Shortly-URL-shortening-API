@@ -1,0 +1,64 @@
+@media (max-width: 1350px) {
+    header{
+        height: fit-content;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+
+        .text-container{
+            justify-self: center;
+            text-align: center;
+            width: 90%;
+        }
+
+        .image-container{   
+            grid-row: 1;
+            height: 100%;
+            width: 90%;
+            justify-content: center;
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    header{
+        .text-container{
+            h1{
+                font-size: 3.9rem;
+                line-height: 75px;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 500px) {
+    header{
+        .text-container{
+            h1{
+                font-size: 2.4rem;
+                line-height: 45px;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+
+        .image-container{   
+            position: relative;
+            width: 100%;
+            img{
+               position: relative;
+               left: 30%; 
+               transform: scale(1.3);
+            }
+        }
+
+    }
+}
