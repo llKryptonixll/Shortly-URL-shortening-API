@@ -28,6 +28,24 @@
     main{
         position: relative;
         top: 200px;
+
+        .advanced-statistics-section{
+            height: 1500px;
+            grid-template-rows: 30% 70%;
+            .card-container{
+                grid-template-columns: 100%;
+                gap: 80px;
+                height: 100%;
+                justify-items: center;
+            }
+
+            .card-container::after{
+                left: 50%;
+                width: 10px;
+                height: 100%;
+            }
+    
+        }
     }
 }
 
@@ -133,5 +151,34 @@
         width: 90%;
         left: 5%;
         border-radius: 10px;
+    }
+
+    main{
+        position: relative;
+        top: 200px;
+
+        .advanced-statistics-section{
+            .text-container{
+                h2{
+                    font-size: 1.8rem;
+                }
+                p{
+                    font-size: 1.1rem;
+                }
+            }
+
+            .card-container{
+                .card{
+                    .card-text-container{
+                        .card-header{
+                            font-size: 1.2rem;
+                        }
+                        .card-text{
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
