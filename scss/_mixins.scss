@@ -1,10 +1,14 @@
 @mixin button-rounded-main {
     background-color: $cyan;
     color: white;
-    border-radius: 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 @mixin button-rounded-shortner {
     background-color: $cyan;
     color: white;
     border-radius: 7px;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
