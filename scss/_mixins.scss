@@ -1,9 +1,10 @@
-@mixin button-rounded-navbar {
-    
-}
 @mixin button-rounded-main {
-    
+    background-color: $cyan;
+    color: white;
+    border-radius: 20px;
 }
 @mixin button-rounded-shortner {
-    
+    background-color: $cyan;
+    color: white;
+    border-radius: 7px;
 }
