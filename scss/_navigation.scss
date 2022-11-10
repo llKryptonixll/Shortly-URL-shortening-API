@@ -57,6 +57,7 @@
     width: 0; 
     opacity: 0; 
     transition: 1s;
+    visibility: hidden;
 
     .mobile-navigation{
         display: grid;
@@ -92,4 +93,5 @@
     width: 375px;
     transition: 2s;
     opacity: 1;
+    visibility: visible;
 }
