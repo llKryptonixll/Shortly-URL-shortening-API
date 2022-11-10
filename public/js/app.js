@@ -79,5 +79,3 @@ function visualFeedback(){
 }
 
 window.addEventListener("load", listItems);
-
-localStorage.clear()
