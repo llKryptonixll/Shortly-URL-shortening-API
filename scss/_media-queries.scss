@@ -56,6 +56,10 @@
     
         }
     }
+
+    footer{
+        top: 200px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -101,6 +105,16 @@
                     }
                 }
             }
+        }
+    }
+
+    footer{
+        .content-wrapper{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+            padding-top: 0;
         }
     }
 }
@@ -163,9 +177,6 @@
     }
 
     main{
-        position: relative;
-        top: 200px;
-
         .advanced-statistics-section{
             .text-container{
                 h2{
@@ -193,6 +204,29 @@
         .boost-your-links-banner-section{  
             p{
                 font-size: 1.6rem;
+            }
+        }
+    }
+
+    footer{
+        height: fit-content;
+        min-height: 700px;
+        .content-wrapper{
+            .footer-links-container{
+                display: grid;
+                grid-row-gap: 30px;
+                text-align: center;
+                ul{
+                    .middle-item{
+                        margin-left: 0;
+                    }
+                    li{
+                        .middle-item{
+                            margin-left: 0;
+                            margin-right: 0;
+                        }
+                    }
+                }
             }
         }
     }

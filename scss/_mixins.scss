@@ -16,3 +16,15 @@
     color: $grayish-violet;
     font-weight: bold;
 }
+@mixin navbar-links-hover {
+    color: $very-dark-blue;
+    transition: 300ms;
+}
+@mixin main-button-hover {
+    background-color: hsl(180, 61%, 78%) !important;
+    transition: 300ms !important;
+}
+@mixin footer-hovers {
+    transition: 300ms;
+    color: $cyan;
+}

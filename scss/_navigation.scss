@@ -32,6 +32,9 @@
             @include main-anchors;
             margin-left: 20px
         }
+        li:hover{
+            @include navbar-links-hover;
+        }
     }
 
     .login-buttons-container{
@@ -41,8 +44,14 @@
             font-size: 1rem;
             margin-left: 20px;
         }
+        .sign-up-button:hover{
+            @include main-button-hover;  
+        }
         .login-button{
             @include main-anchors;
+        }
+        .login-button:hover{
+            @include navbar-links-hover;
         }
     }
 }

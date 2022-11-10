@@ -13,6 +13,9 @@ button{
     border: none;
     cursor: pointer;
 }
+button:hover{
+    @include main-button-hover;  
+}
 ul{
     list-style: none;
 }
