@@ -21,6 +21,9 @@
             }
         }
     }
+    .main-navbar{
+        width: 85%;
+    }
 }
 
 @media (max-width: 750px) {
@@ -35,6 +38,18 @@
             }
         }
 
+    }
+}
+
+@media (max-width: 800px) {
+    .main-navbar{
+        .mobile-nav-toggle-container{
+            display: block;
+        }
+
+        a{
+            display: none;
+        }
     }
 }
 
@@ -60,5 +75,11 @@
             }
         }
 
+    }
+
+    .mobile-sidebar{
+        width: 90%;
+        left: 5%;
+        border-radius: 10px;
     }
 }
