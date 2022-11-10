@@ -1,0 +1,109 @@
+main{
+    position: relative;
+    top: 100px;
+    .shortner-section{
+        background-color: $light-gray;
+        height: 600px;
+        display: grid;
+        justify-items: center;
+        grid-template-rows: 40% 60%;
+    
+        form{
+            background-color: $dark-violet;
+            background-image: url("../images/bg-shorten-desktop.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 80%;
+            border-radius: 15px;
+            position: relative;
+            top: -50%;
+            display: grid;
+            place-items: center;
+
+            div{
+                width: 90%;
+                display: grid;
+                grid-template-columns: 70% 30%;
+                position: relative;
+
+                input{
+                    width: 95%;
+                    height: 60px;
+                    border-radius: 8px;
+                    border: none;
+                    outline-color: $cyan
+                }
+                button{
+                    @include button-rounded-shortner;
+                    height: 60px;
+                }
+                .error-message{
+                    color: $red;
+                    position: absolute;
+                    bottom: -35px;
+                    font-style: italic;
+                    display: none;
+                }
+                ::placeholder{
+                    font-size: 1.2rem;
+                    padding-left: 30px;
+                    position: relative;
+                    top: 5px;
+                }
+            }
+        }
+
+        .short-links-list{
+            height: auto;
+            width: 80%;
+            overflow-y: auto;
+            display: grid;
+            align-content: flex-start;
+            gap: 20px;
+
+            hr{
+                display: none;
+                border-bottom: 1px solid $light-gray;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                width: 90%;
+                justify-self: center;
+            }
+
+            li{
+                background-color: white;
+                height: 70px;
+                border-radius: 8px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                p{
+                    margin-left: 30px;
+                    font-size: 1.2rem;
+                    color: $very-dark-blue;
+                }
+
+                div{
+                    display: flex;
+                    margin-right: 30px;
+                    align-items: center;
+
+                    p{
+                        color: $cyan;
+                        margin-right: 20px;
+                        font-size: 1.2rem;
+                    }
+                    button{
+                        @include button-rounded-shortner;
+                        width: 110px;
+                        height: 40px;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
