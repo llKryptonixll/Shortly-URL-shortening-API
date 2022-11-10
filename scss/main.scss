@@ -1,0 +1,19 @@
+@import "variables";
+@import "mixins";
+@import "navigation";
+@import "hero-section";
+@import "sections";
+@import "footer";
+@import "media-queries";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;   
+}
+button{
+    border: none;
+    
+}
