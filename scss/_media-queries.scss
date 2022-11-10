@@ -177,6 +177,15 @@
     }
 
     main{
+        .shortner-section{   
+            .short-links-list{ 
+                .empty-message{
+                    font-size: 1.8rem;
+                }              
+            }
+        }
+
+
         .advanced-statistics-section{
             .text-container{
                 h2{

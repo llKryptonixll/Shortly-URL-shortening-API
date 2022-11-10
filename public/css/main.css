@@ -585,6 +585,9 @@ footer .content-wrapper .social-links-container a:hover {
     left: 5%;
     border-radius: 10px;
   }
+  main .shortner-section .short-links-list .empty-message {
+    font-size: 1.8rem;
+  }
   main .advanced-statistics-section .text-container h2 {
     font-size: 1.8rem;
   }
