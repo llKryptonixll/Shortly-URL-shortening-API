@@ -253,6 +253,7 @@ main .shortner-section .short-links-list .empty-message {
   display: flex;
   align-items: center;
   height: 100%;
+  background-color: transparent;
 }
 main .shortner-section .short-links-list hr {
   display: none;
