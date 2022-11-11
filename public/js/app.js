@@ -59,6 +59,16 @@ function listItems() {
         button.addEventListener("click", () => {
             const shortLink = button.parentElement.children[0].innerText;
             navigator.clipboard.writeText(shortLink);
+
+            // change button state to copied
+            button.innerText = "Copied!";
+            button.style.backgroundColor = "hsl(257, 27%, 26%)";
+
+            // change button to default after 1s
+            setTimeout(() => {
+                button.innerText = "Copy!";
+                button.style.backgroundColor = "hsl(180, 66%, 49%)";
+            },1000)
         });
     });
 }

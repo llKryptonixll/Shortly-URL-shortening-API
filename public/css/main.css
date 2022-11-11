@@ -145,7 +145,7 @@ header {
 }
 header .text-container {
   justify-self: right;
-  width: 80%;
+  width: 83%;
 }
 header .text-container h1, header .text-container p, header .text-container .button-container {
   white-space: pre-line;
